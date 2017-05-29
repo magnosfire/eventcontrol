@@ -27,6 +27,10 @@ var jobRouter = require("./routes/job")();
 app.use("/Job", jobRouter);
 */
 
+app.get("/", function (req, res) {
+    res.send('hello world');
+});
+
 
 var server = app.listen(3000, function () {
 
